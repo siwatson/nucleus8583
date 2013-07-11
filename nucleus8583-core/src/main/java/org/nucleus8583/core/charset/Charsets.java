@@ -44,8 +44,7 @@ public abstract class Charsets {
 
 		for (Map.Entry<Object, Object> entry : prop.entrySet()) {
 			try {
-				Class<?> cla = Class.forName((String) entry.getValue(), true,
-						Thread.currentThread().getContextClassLoader());
+				Class<?> cla = Class.forName((String) entry.getValue());
 
 				providers.put(((String) entry.getKey()).toUpperCase(),
 						(CharsetProvider) cla.newInstance());
