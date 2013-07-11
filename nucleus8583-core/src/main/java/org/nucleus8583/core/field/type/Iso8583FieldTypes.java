@@ -48,7 +48,7 @@ public abstract class Iso8583FieldTypes {
 		Entry entry = new Entry();
 
 		try {
-			entry.clazz = Class.forName(lines.get(0), true, Thread.currentThread().getContextClassLoader());
+			entry.clazz = Class.forName(lines.get(0));
 		} catch (Throwable t) {
 			return null;
 		}
