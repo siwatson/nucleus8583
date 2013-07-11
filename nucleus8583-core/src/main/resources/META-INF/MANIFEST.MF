@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Export-Package: org.nucleus8583.core.charset;uses:="org.nucleus8583.co
+ re.util,org.nucleus8583.core.charset.spi",org.nucleus8583.core.util;u
+ ses:="org.nucleus8583.core",org.nucleus8583.core;uses:="org.nucleus85
+ 83.core.util,org.nucleus8583.core.charset.spi,org.nucleus8583.core.xm
+ l,javax.xml.validation,javax.xml.bind,org.w3c.dom",org.nucleus8583.co
+ re.charset.spi,org.nucleus8583.core.xml;uses:="javax.xml.bind.annotat
+ ion,org.nucleus8583.core.util,org.nucleus8583.core,org.nucleus8583.co
+ re.charset,org.nucleus8583.core.charset.spi"
+Built-By: Robbi
+Tool: Bnd-0.0.357
+Bundle-Name: nucleus8583 Core
+Created-By: Apache Maven Bundle Plugin
+DynamicImport-Package: *
+Build-Jdk: 1.6.0_20
+Bundle-Version: 2.3.3
+Bnd-LastModified: 1312715274257
+Bundle-ManifestVersion: 2
+Bundle-Description: OSGi bundle for ISO-8583 message standard implemen
+ tation.
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-DocURL: http://code.google.com/p/nucleus8583/
+Bundle-SymbolicName: org.nucleus8583.core
+Import-Package: javax.xml.bind,javax.xml.bind.annotation,javax.xml.val
+ idation,org.nucleus8583.core,org.nucleus8583.core.charset,org.nucleus
+ 8583.core.charset.spi,org.nucleus8583.core.util,org.nucleus8583.core.
+ xml,org.w3c.dom
+
