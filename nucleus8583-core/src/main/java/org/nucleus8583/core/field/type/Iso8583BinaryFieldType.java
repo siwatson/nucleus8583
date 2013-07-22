@@ -21,7 +21,11 @@ public final class Iso8583BinaryFieldType extends Iso8583AbstractBinaryFieldType
 			throw new IllegalArgumentException("length must be greater than zero");
 		}
 
-		this.length = def.getLength() << 1;
+		//this.length = def.getLength() << 1;
+		
+		//this set the size of primary bitmap field correctly to 16, rather than 32.
+		//fixes problem with reading messages which don't have secondary bitmap set
+		this.length = def.getLength();
 	}
 
 	public void read(Reader reader, BitSet bits) throws IOException {
